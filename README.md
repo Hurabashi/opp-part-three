@@ -7,7 +7,7 @@
 * [5 dalis](https://github.com/Hurabashi/oop-with-c-plus-plus/tree/V0.5)
 
 ## 0.5 Versijos testavimas:
-     Vector duomenų tipas                                     List duomenų tipas    
+     Vector duomenų tipas                                       List duomenų tipas    
 
 |      Įrašų skaičius       |    Operacijos    | Kiek užtruko | |     Įrašų skaičius   |    Operacijos    | Kiek užtruko | |
 |---------------------|:------------------:|--------------:|-------------------------|---------------------|:------------------:|--------------:|---------------------|
@@ -29,4 +29,9 @@
 
 
    Įranga su kuria atliktas testavimas:
-
+| Tipas | Įranga |
+| --------| --------|
+| OS: | Windows 10, 64-bit|
+| CPU: | i5-6400 2.70 GHz |
+| RAM: | 8.00 GB |
+| SSD: | 128.00 GB |
