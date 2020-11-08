@@ -9,7 +9,7 @@
 ## 0.5 Versijos testavimas:
      Vector duomenų tipas                                                List duomenų tipas    
 
-|      Įrašų skaičius       |    Operacijos    | Kiek užtruko |-------|     Įrašų skaičius   |    Operacijos    | Kiek užtruko |----|
+|      Įrašų skaičius       |    Operacijos    | Kiek užtruko | |     Įrašų skaičius   |    Operacijos    | Kiek užtruko | |
 |---------------------|:------------------:|--------------:|-------------------------|---------------------|:------------------:|--------------:|---------------------|
 | 1000 |    nuskaitymas iš failų   | 0.05 s | | 1000 |    nuskaitymas iš failų   |   0.04 s | |
 |      |    studentų rusiavimas    | 0.02 s | |      |    studentų rusiavimas    |   0.01 s | |
