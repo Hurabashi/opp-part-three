@@ -9,7 +9,7 @@
 ## 0.5 Versijos testavimas:
      Vector duomenų tipas                                                List duomenų tipas    
 
-|      Įrašų skaičius       |    Operacijos    | Kiek užtruko |-----------------------------------|     Įrašų skaičius   |    Operacijos    | Kiek užtruko |---------------------|
+|      Įrašų skaičius       |    Operacijos    | Kiek užtruko |----------|     Įrašų skaičius   |    Operacijos    | Kiek užtruko |-----|
 |---------------------|:------------------:|--------------:|-------------------------|---------------------|:------------------:|--------------:|---------------------|
 | col 2 is |    centered   |   $12 | | col 2 is |    centered   |   $12 | |
 | col 3 is | right-aligned |    $1 | | col 3 is | right-aligned |    $1 | |
