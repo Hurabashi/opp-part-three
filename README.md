@@ -7,15 +7,15 @@
 * [5 dalis](https://github.com/Hurabashi/oop-with-c-plus-plus/tree/V0.5)
 
 ## 0.5 Versijos testavimas:
-
-|  Duomenų tipas  | Elementų skaičius   |      Veiksmas      |  Kiek užtruko |
-|-----------------|---------------------|:------------------:|--------------:|
-|    col 1 is     |      col 1 is       |    left-aligned    | $1600 |
-| col 1 is | col 2 is |    centered   |   $12 |
-| col 1 is | col 3 is | right-aligned |    $1 |
-| col 1 is | col 1 is |  left-aligned | $1600 |
-| col 1 is | col 2 is |    centered   |   $12 |
-| col 1 is | col 3 is | right-aligned |    $1 |
-| col 1 is | col 1 is |  left-aligned | $1600 |
-| col 1 is | col 2 is |    centered   |   $12 |
-| col 1 is | col 3 is | right-aligned |    $1 |
+|     Vector duomenų tipas      |    List duomenų tipas    |
+| Elementų skaičius   |      Veiksmas      |  Kiek užtruko |
+|---------------------|:------------------:|--------------:|
+|      col 1 is       |    left-aligned    | $1600 |
+| col 2 is |    centered   |   $12 |
+| col 3 is | right-aligned |    $1 |
+| col 1 is |  left-aligned | $1600 |
+| col 2 is |    centered   |   $12 |
+| col 3 is | right-aligned |    $1 |
+| col 1 is |  left-aligned | $1600 |
+| col 2 is |    centered   |   $12 |
+| col 3 is | right-aligned |    $1 |
