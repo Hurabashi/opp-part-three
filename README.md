@@ -11,9 +11,9 @@
 
 |      Įrašų skaičius       |    Operacijos    | Kiek užtruko |----------|     Įrašų skaičius   |    Operacijos    | Kiek užtruko |-----|
 |---------------------|:------------------:|--------------:|-------------------------|---------------------|:------------------:|--------------:|---------------------|
-| col 2 is |    centered   |   $12 | | col 2 is |    centered   |   $12 | |
-| col 3 is | right-aligned |    $1 | | col 3 is | right-aligned |    $1 | |
-| col 1 is |  left-aligned | $1600 | | col 1 is |  left-aligned | $1600 | |
+| 1000 |    nuskaitymas iš failų   | 0.05 s | | 1000 |    nuskaitymas iš failų   |   0.04 s | |
+|      |    studentų rusiavimas    | 0.02 s | |      |    studentų rusiavimas    |   0.01 s | |
+|      |    bendras                | 0.49 s | |      |    bendras                |   0.42 s | |
 | col 2 is |    centered   |   $12 | | col 2 is |    centered   |   $12 | |
 | col 3 is | right-aligned |    $1 | | col 3 is | right-aligned |    $1 | |
 | col 1 is |  left-aligned | $1600 | | col 1 is |  left-aligned | $1600 | |
