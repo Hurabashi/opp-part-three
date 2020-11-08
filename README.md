@@ -8,6 +8,7 @@
 
 ## 0.5 Versijos testavimas:
 |     Vector duomenų tipas      |    List duomenų tipas    |
+|-------------------------------|--------------------------|
 | Elementų skaičius   |      Veiksmas      |  Kiek užtruko |
 |---------------------|:------------------:|--------------:|
 |      col 1 is       |    left-aligned    | $1600 |
