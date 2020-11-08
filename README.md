@@ -28,3 +28,5 @@
 |      |    bendras (su generavimu)| 74.47 min | |      |    bendras (su generavimu)|   64.79 min | |
 
 
+   Įranga su kuria atliktas testavimas:
+
