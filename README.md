@@ -4,29 +4,38 @@
 * [2 dalis](https://github.com/Hurabashi/oop-with-c-plus-plus/tree/V0.2)
 * [3 dalis](https://github.com/Hurabashi/oop-with-c-plus-plus/tree/V0.3.1)
 * [4 dalis](https://github.com/Hurabashi/oop-with-c-plus-plus/tree/V0.4)
-* [5 dalis](https://github.com/Hurabashi/oop-with-c-plus-plus/tree/V0.5)
+* [5 dalis](https://github.com/Hurabashi/oop-with-c-plus-plus/tree/V0.5.2)
+* [6 dalis su vector](https://github.com/Hurabashi/oop-with-c-plus-plus/tree/V1.0vector) ir [6 dalis su list](https://github.com/Hurabashi/oop-with-c-plus-plus/tree/V1.0list)
 
-## 0.5/0.4 Versijos testavimas:
+## 0.5/0.4 Versijos testavimas (1 strategija):
+     Vector duomenų tipas                                          List duomenų tipas    
+
+|      Įrašų skaičius       |    Operacijos    | Kiek užtruko | |     Įrašų skaičius   |    Operacijos    | Kiek užtruko | |
+|---------------------|:------------------:|--------------:|-------------------------|---------------------|:------------------:|--------------:|---------------------|
+| 1000 |    nuskaitymas iš failų   | 0.08 s | | 1000 |    nuskaitymas iš failų   |   0.04 s | |
+|      |    studentų rusiavimas    | 0.02 s | |      |    studentų rusiavimas    |   0.01 s | |
+| 10000 |    nuskaitymas iš failų   | 0.57 s | | 10000 |    nuskaitymas iš failų   |   0.42 s | |
+|      |    studentų rusiavimas    | 0.17 s | |      |    studentų rusiavimas    |   0.11 s | |
+| 100000 |    nuskaitymas iš failų   | 4.86 s | | 100000 |    nuskaitymas iš failų   |   4.21 s | |
+|      |    studentų rusiavimas    | 1.55 s | |      |    studentų rusiavimas    |   1.03 s | |
+| 1000000 |    nuskaitymas iš failų   | 46.86 s | | 1000000 |    nuskaitymas iš failų   |   40.37 s | |
+|      |    studentų rusiavimas    | 15.37 s | |      |    studentų rusiavimas    |   9.57 s | ||
+| 10000000 |    nuskaitymas iš failų   | 7.97 min | | 10000000 |    nuskaitymas iš failų   |   6.12 min | |
+|      |    studentų rusiavimas    | 5.27 min | |      |    studentų rusiavimas    |   5.93 min | |
+
+## 1.0 Versijos testavimas (2 strategija):
      Vector duomenų tipas                                          List duomenų tipas    
 
 |      Įrašų skaičius       |    Operacijos    | Kiek užtruko | |     Įrašų skaičius   |    Operacijos    | Kiek užtruko | |
 |---------------------|:------------------:|--------------:|-------------------------|---------------------|:------------------:|--------------:|---------------------|
 | 1000 |    nuskaitymas iš failų   | 0.05 s | | 1000 |    nuskaitymas iš failų   |   0.04 s | |
 |      |    studentų rusiavimas    | 0.02 s | |      |    studentų rusiavimas    |   0.01 s | |
-|      |    bendras (su generavimu)| 0.49 s | |      |    bendras (su generavimu)|   0.42 s | |
-| 10000 |    nuskaitymas iš failų   | 0.46 s | | 10000 |    nuskaitymas iš failų   |   0.37 s | |
-|      |    studentų rusiavimas    | 0.14 s | |      |    studentų rusiavimas    |   0.09 s | |
-|      |    bendras (su generavimu)| 3.92 s | |      |    bendras (su generavimu)|   3.61 s | |
-| 100000 |    nuskaitymas iš failų   | 4.72 s | | 100000 |    nuskaitymas iš failų   |   3.72 s | |
-|      |    studentų rusiavimas    | 1.55 s | |      |    studentų rusiavimas    |   0.93 s | |
-|      |    bendras (su generavimu)| 35.86 s | |      |    bendras (su generavimu)|   34.39 s | |
-| 1000000 |    nuskaitymas iš failų   | 44.59 s | | 1000000 |    nuskaitymas iš failų   |   36.74 s | |
-|      |    studentų rusiavimas    | 14.26 s | |      |    studentų rusiavimas    |   9.32 s | |
-|      |    bendras (su generavimu)| 5.92 min | |      |    bendras (su generavimu)|   5.73 min | |
-| 10000000 |    nuskaitymas iš failų   | 8.28 min | | 10000000 |    nuskaitymas iš failų   |   6.09 min | |
-|      |    studentų rusiavimas    | 5.63 min | |      |    studentų rusiavimas    |   4.96 min | |
-|      |    bendras (su generavimu)| 74.47 min | |      |    bendras (su generavimu)|   64.79 min | |
-
+| 10000 |    nuskaitymas iš failų   | 0.58 s | | 10000 |    nuskaitymas iš failų   |   0.51 s | |
+|      |    studentų rusiavimas    | 0.17 s | |      |    studentų rusiavimas    |   0.15 s | |
+| 100000 |    nuskaitymas iš failų   | 5.45 s | | 100000 |    nuskaitymas iš failų   |   4.32 s | |
+|      |    studentų rusiavimas    | 1.81 s | |      |    studentų rusiavimas    |   1.28 s | |
+| 1000000 |    nuskaitymas iš failų   | 52.59 s | | 1000000 |    nuskaitymas iš failų   |   40.09 s | |
+|      |    studentų rusiavimas    | 16.89 s | |      |    studentų rusiavimas    |   12.30 s | ||
 
    Įranga su kuria atliktas testavimas:
 | Tipas | Įranga |
@@ -35,3 +44,5 @@
 | CPU: | i5-6400 2.70 GHz |
 | RAM: | 8.00 GB |
 | SSD: | 128.00 GB |
+
+
