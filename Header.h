@@ -26,7 +26,7 @@ struct duomuo {
     int egz = 1;
     std::vector<int> pazymiai;
     float GP = 0; float GP_med = 0;
-    
+
 };
 
 class Timer
@@ -61,7 +61,7 @@ duomuo calculations(duomuo Eil) {
     return Eil;
 }
 
-std::list<duomuo> reading_file(string file_name, int studentu_sk) {
+std::vector<duomuo> reading_file(string file_name, int studentu_sk) {
     std::ifstream MyReadFile(file_name);
     if (!MyReadFile) {
         cout << "\nNepavyko pasiekti failo, pasitkrinkite ar jis tikrai tokiu pavadinimu.\n";
@@ -69,7 +69,7 @@ std::list<duomuo> reading_file(string file_name, int studentu_sk) {
     }
     cout << "Pavyko atidaryti faila... \n";
     duomuo Eil;
-    std::list<duomuo> Eil_list;
+    std::vector<duomuo> Eil_vector;
 
     //nuskaitome
     while (!MyReadFile.eof()) {
@@ -85,24 +85,24 @@ std::list<duomuo> reading_file(string file_name, int studentu_sk) {
         //skaiciuojame
         Eil = calculations(Eil);
         //Pridejimas i sarasa
-        Eil_list.push_back(Eil);
+        Eil_vector.push_back(Eil);
         //saraso isvalymas isvalymas
         Eil.pazymiai.clear();
 
     }
     // uzdarome
     MyReadFile.close();
-    return Eil_list;
+    return Eil_vector;
 }
 
-void create_file_from_list(std::list<duomuo> Eil_list, string file_name) {
+void create_file_from_list(std::vector<duomuo> Eil_vector, string file_name) {
 
     std::ofstream myfile;
     myfile.open(file_name);
 
     myfile << "Vardas         Pavarde          Galutinis (Vid.)   Galutinis (Med.)";
     myfile << "\n-------------------------------------------------------------\n";
-    for (duomuo Eil : Eil_list) {
+    for (duomuo Eil : Eil_vector) {
         myfile << std::left << std::setw(16) << Eil.Vard;
         myfile << std::left << std::setw(16) << Eil.Pav;
 
@@ -110,7 +110,7 @@ void create_file_from_list(std::list<duomuo> Eil_list, string file_name) {
         myfile << std::left << std::setw(16) << std::fixed << std::setprecision(2) << Eil.GP_med << std::endl;
     }
     //Duomenu isvalymas ir uzdarymas
-    Eil_list.clear();
+    Eil_vector.clear();
     myfile.close();
 }
 
@@ -118,33 +118,33 @@ void testavimas(int studentu_sk, string base_file, string vargs_file, string gal
     Timer t;
     //cout << "Skaitome faila... \n";
     Timer t2;
-    std::list<duomuo> Eil_list = reading_file(base_file, studentu_sk);
+    std::vector<duomuo> Eil_vector = reading_file(base_file, studentu_sk);
     cout << "Failo nuskaitymas uztruko: " << t2.elapsed() << " s\n";
 
     //cout << "Rusiuojame... \n";
     Timer t3;
-    std::list<duomuo> Eil_list_vargsiukai;
+    std::vector<duomuo> Eil_vector_vargsiukai;
 
-    
-    for (duomuo Eil : Eil_list) {
+
+    for (duomuo Eil : Eil_vector) {
         if (Eil.GP < 5.0f) {
-            Eil_list_vargsiukai.push_back(Eil);
+            Eil_vector_vargsiukai.push_back(Eil);
         }
     }
-    Eil_list.erase(std::remove_if(Eil_list.begin(), Eil_list.end(), [](duomuo Eil)
+    Eil_vector.erase(std::remove_if(Eil_vector.begin(), Eil_vector.end(), [](duomuo Eil)
         {
             return Eil.GP < 5.0f;
-        }), Eil_list.end());
-  
+        }), Eil_vector.end());
+
     cout << "Failo rusiavimas uztruko: " << t3.elapsed() << " s\n";
 
 
     cout << "Kuriame failus...\n";
     Timer t4;
-    create_file_from_list(Eil_list, galvoc_file);
+    create_file_from_list(Eil_vector, galvoc_file);
     //cout << "Failo 'galvociai' kurimas uztruko: " << t4.elapsed() << " s\n";
     Timer t5;
-    create_file_from_list(Eil_list_vargsiukai, vargs_file);
+    create_file_from_list(Eil_vector_vargsiukai, vargs_file);
     //cout << "Failo 'vargsiukai' kurimas uztruko: " << t4.elapsed() << " s\n";
 
     cout << "\n";
