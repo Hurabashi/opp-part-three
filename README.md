@@ -4,7 +4,8 @@
 * [2 dalis](https://github.com/Hurabashi/oop-with-c-plus-plus/tree/V0.2)
 * [3 dalis](https://github.com/Hurabashi/oop-with-c-plus-plus/tree/V0.3.1)
 * [4 dalis](https://github.com/Hurabashi/oop-with-c-plus-plus/tree/V0.4)
-* [5 dalis](https://github.com/Hurabashi/oop-with-c-plus-plus/tree/V0.5)
+* [5 dalis](https://github.com/Hurabashi/oop-with-c-plus-plus/tree/V0.5.1)
+
 
 ## 0.5/0.4 Versijos testavimas (1 strategija):
      Vector duomenų tipas                                          List duomenų tipas    
