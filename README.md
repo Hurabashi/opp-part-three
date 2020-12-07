@@ -14,12 +14,12 @@
 |      |    studentų rusiavimas    | 16.89 s | |      |    studentų rusiavimas    |   >24 h | ||
 
 Iš to galime matyti, kad metodų taikymas užemė daug daugiau laiko nei funkcijų, bet taip pat vertėtų pastebėti, kad jis užėmė mažiau daug mažiau laikinosios atminties.
-Dabar testuosime flag'us su objektine versija:
+Dabar testuosime flag'us su objektine versija (release):
 
 |    Įrašų skaičius  | 01 | 02 | 03 |
 |----------------------|----|----|----|
-| 10000  | 0.43 s  | 0 s| 0 s|
-| 100000 | 26.53 s | 0 s| 0 s|
+| 10000  | 0.43 s  | 0.46 s| 0.44 s|
+| 100000 | 26.53 s | 26.58 s| 27.21 s|
 
 
    Įranga su kuria atliktas testavimas:
