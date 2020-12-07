@@ -16,6 +16,30 @@ public:
         nd_ = nd;
     }
 
+    ~Studentas() {
+ 
+    }
+
+    Studentas(const Studentas& stud2) {
+        vardas_ = stud2.vardas_;
+        pavarde_ = stud2.pavarde_;
+        egzaminas_ = stud2.egzaminas_;
+        for (int i = 0; i < stud2.nd_.size(); i++)
+            nd_.push_back(stud2.nd_[i]);
+        galutinis_pazymys_ = stud2.galutinis_pazymys_;
+    }
+
+    Studentas& operator=( const Studentas& stud2) {
+        vardas_ = stud2.vardas_;
+        pavarde_ = stud2.pavarde_;
+        egzaminas_ = stud2.egzaminas_;
+        for (int i = 0; i < stud2.nd_.size(); i++)
+            nd_.push_back(stud2.nd_[i]);
+        galutinis_pazymys_ = stud2.galutinis_pazymys_;
+        return *this;
+    }
+
+
     float skaiciuok();
     void setVardas(string v) {
         vardas_ = v;
