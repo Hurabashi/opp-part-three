@@ -16,10 +16,10 @@
 Iš to galime matyti, kad metodų taikymas užemė daug daugiau laiko nei funkcijų, bet taip pat vertėtų pastebėti, kad jis užėmė mažiau daug mažiau laikinosios atminties.
 Dabar testuosime flag'us su objektine versija:
 
-|    operacijos tipas  | 01 | 02 | 03 |
-|:----------------------:|----|----|----|
-|nuskaitymas iš failų | 0 s | 0 s| 0 s|
-| studentų rusiavimas | 0 s | 0 s| 0 s|
+|    Įrašų skaičius  | 01 | 02 | 03 |
+|----------------------|----|----|----|
+| 10000  | 0.43 s  | 0 s| 0 s|
+| 100000 | 26.53 s | 0 s| 0 s|
 
 
    Įranga su kuria atliktas testavimas:
