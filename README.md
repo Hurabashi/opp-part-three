@@ -3,7 +3,7 @@
 * [1 dalis](https://github.com/Hurabashi/oop-with-c-plus-plus/tree/V1.1)
 
 
-## 1.1 Versijos testavimas:
+## 1.1 Versijos testavimas (debug):
      Naudojant funkcinį programavimą                                          Naudojant objektinį programavimą    
 
 |      Įrašų skaičius       |    Operacijos    | Kiek užtruko | |     Įrašų skaičius   |    Operacijos    | Kiek užtruko | |
