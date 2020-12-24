@@ -1,6 +1,7 @@
 # Objektinio programavimo su C++ antroji užduotis
 
-* [1 dalis](https://github.com/Hurabashi/oop-with-c-plus-plus/tree/V1.1)
+* [1 dalis](https://github.com/Hurabashi/oop-part-two/tree/V1.1)
+* [2 dalis](https://github.com/Hurabashi/oop-part-two/tree/V1.2)
 
 
 ## 1.1 Versijos testavimas:
