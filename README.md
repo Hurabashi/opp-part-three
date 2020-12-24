@@ -2,7 +2,7 @@
 
 * [1 dalis](https://github.com/Hurabashi/oop-part-two/tree/V1.1)
 * [2 dalis](https://github.com/Hurabashi/oop-part-two/tree/V1.2)
-
+* [3 dalis](https://github.com/Hurabashi/oop-part-two/tree/V1.5)
 
 ## 1.1 Versijos testavimas:
      Naudojant funkcinį programavimą                                          Naudojant objektinį programavimą    
