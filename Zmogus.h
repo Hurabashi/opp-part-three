@@ -1,10 +1,16 @@
+//
+// Created by minyk on 12/27/2020.
+//
+
+#ifndef INC_2_0V_ZMOGUS_H
+#define INC_2_0V_ZMOGUS_H
 #pragma once
 #include "Header.h"
 class Zmogus
 {
 protected:
-	string vardas_;
-	string pavarde_;
+    string vardas_;
+    string pavarde_;
 public:
     void setVardas(string v) {
         vardas_ = v;
@@ -21,3 +27,4 @@ public:
     }
 };
 
+#endif //INC_2_0V_ZMOGUS_H

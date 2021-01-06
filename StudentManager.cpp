@@ -1,3 +1,7 @@
+//
+// Created by minyk on 12/27/2020.
+//
+
 #include "StudentManager.h"
 vector<Studentas> StudentManager::readStudents(string file_name, int studentu_sk) {
     std::ifstream MyReadFile(file_name);
@@ -51,16 +55,6 @@ void StudentManager::testing(int studentu_sk, string base_file, string vargs_fil
 
 
     Timer t2;
-    /*
-    for (int i = 0; i < students_.size(); i++) {
-        if (students_[i].getGP() < 5) {
-            failed_.push_back(students_[i]);
-            students_.erase(students_.begin() + i);
-            i--;
-        }
-    }
-    */
-    
     vector<Studentas>::iterator it = students_.begin();
     while (it != students_.end()) {
         if ((*it).getGP() < 5.0f) {

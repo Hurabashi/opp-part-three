@@ -1,10 +1,15 @@
+//
+// Created by minyk on 12/27/2020.
+//
+
+#ifndef INC_2_0V_STUDENTAS_H
+#define INC_2_0V_STUDENTAS_H
+
 #pragma once
 #include "Zmogus.h"
 class Studentas : public Zmogus
 {
 private:
-    //string vardas_;
-    //string pavarde_;
     float egzaminas_;
     std::vector<float> nd_;
     float galutinis_pazymys_;
@@ -15,9 +20,9 @@ public:
         egzaminas_ = egzam;
         nd_ = nd;
     }
-    
+
     ~Studentas() {
- 
+
     }
 
     Studentas(const Studentas& stud2) {
@@ -28,7 +33,7 @@ public:
             nd_.push_back(stud2.nd_[i]);
         galutinis_pazymys_ = stud2.galutinis_pazymys_;
     }
-    
+
     Studentas& operator=( const Studentas& stud2) {
         vardas_ = stud2.vardas_;
         pavarde_ = stud2.pavarde_;
@@ -37,23 +42,9 @@ public:
         galutinis_pazymys_ = stud2.galutinis_pazymys_;
         return *this;
     }
-    
+
 
     float skaiciuok();
-    /*
-    void setVardas(string v) {
-        vardas_ = v;
-    }
-    string getVardas() {
-        return vardas_;
-    }
-
-    void setPavarde(string p) {
-        pavarde_ = p;
-    }
-    string getPavarde() {
-        return pavarde_;
-    }*/
 
     void setEgzaminas(float e) {
         egzaminas_ = e;
@@ -77,3 +68,4 @@ public:
     }
 };
 
+#endif //INC_2_0V_STUDENTAS_H

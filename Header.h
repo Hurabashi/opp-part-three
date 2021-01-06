@@ -1,9 +1,14 @@
+//
+// Created by minyk on 12/27/2020.
+//
+#ifndef INC_2_0V_HEADER_H
+#define INC_2_0V_HEADER_H
+
 #pragma once
 #include <iostream>
 #include <fstream>
 #include <iomanip>
 #include <string>
-#include <stdlib.h>
 #include <vector>
 #include <map>
 #include <chrono>
@@ -32,7 +37,10 @@ public:
     }
     double elapsed() const {
         return std::chrono::duration<double>
-            (std::chrono::high_resolution_clock::now() - start).count();
+                (std::chrono::high_resolution_clock::now() - start).count();
     }
 };
 
+
+
+#endif //INC_2_0V_HEADER_H

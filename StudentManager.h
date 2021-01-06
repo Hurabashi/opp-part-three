@@ -1,4 +1,10 @@
-#pragma once
+//
+// Created by minyk on 12/27/2020.
+//
+
+#ifndef INC_2_0V_STUDENTMANAGER_H
+#define INC_2_0V_STUDENTMANAGER_H
+
 #include "Studentas.h"
 class StudentManager {
 private:
@@ -27,3 +33,5 @@ public:
     }
 };
 
+
+#endif //INC_2_0V_STUDENTMANAGER_H
